@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+}
+
+.header{
+    color: white;
+    display: flex;
+    justify-content: end;
+}
+
+.headerNav{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.headerNav:hover{
+    color: lightblue;
+}
