@@ -1,0 +1,22 @@
+.pays{
+    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+body{
+    background-image: url(../images/toronto.jpg);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-attachment: fixed;
+}
+
+.rouge{
+    color: red;
+}
+
+.blanc{
+    color: white;
+}
