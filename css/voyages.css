@@ -6,6 +6,9 @@ html,body,main {
 body {
     margin: 0;
 }
+.navbar {
+    position: fixed;
+}
 .container
 {
     display: flex;
@@ -42,29 +45,23 @@ span{
 }
 .elemnt {
     animation: xfade 16s 12s infinite;
-    background-image: url("../images/asie.jpeg");
+    background-image: url("../images/minas.jpg");
+    background-position: center;
 }
 .elemnt1 {
     animation: xfade 16s 8s infinite;
-    background-image: url("../images/europe.jpg");
+    background-image: url("../images/pandora.jpg");
 
 }
 .elemnt2 {
     animation: xfade 16s 4s infinite;
-    background-image: url("../images/amerique.jpg");
+    background-image: url("../images/southpark.jpg");
 }
 .elemnt3 {
     animation: xfade 16s 0s infinite;
-    background-image: url("../images/italie.jpg");
+    background-image: url("../images/springfield.jpg");
 }
 
-.logo {
-    display: flex;
-    justify-content: start;
-    position: absolute;
-    height: 300px;
-    width: 300px;
-}
 @keyframes xfade{
     15% {
         opacity:1;
@@ -75,4 +72,51 @@ span{
     90% {
         opacity:0;
     }
+}
+.containLOGO {
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+}
+.logo {
+    display: flex;
+    position: absolute;
+}
+
+.nav {
+    display: flex;
+    justify-content: end;
+    border: solid black 1px;
+    width: 1100px;
+    height: 290px;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
 }
