@@ -5,7 +5,13 @@ body{
 .header{
     color: white;
     display: flex;
-    justify-content: end;
+}
+
+.NAV{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
 }
 
 .headerNav{
@@ -50,6 +56,21 @@ body{
 }
 
 .socialMedia{
-    width: 20px;
+    width: 25px;
     margin: 3px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    min-width: 160px;
+    padding: 12px 16px;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
 }
