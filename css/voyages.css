@@ -38,7 +38,7 @@ body {
 span{
     font-size:7em;
     color: whitesmoke;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 .elemnt {
     animation: xfade 16s 12s infinite;
