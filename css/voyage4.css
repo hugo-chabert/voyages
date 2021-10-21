@@ -1,0 +1,106 @@
+.titre{
+    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    color: white;
+}
+
+body{
+    background-image: url(../images/south-park/south-park.png);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-attachment: fixed;
+}
+
+.text{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    width: 60%;
+    justify-content: center;
+    margin-left: 20%;
+    margin-top: 2%;
+    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+    letter-spacing: 1px;
+    padding: 2%;
+    color: white;
+}
+
+.sousLeText{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.Kyle{
+    display: flex;
+    width: 10%;
+    height: 10%;
+    animation-name: Kyle;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+.Stan{
+    display: flex;
+    width: 10%;
+    height: 10%;
+    animation-name: Stan;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+.Cartman{
+    display: flex;
+    width: 10%;
+    height: 10%;
+    animation-name: Cartman;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+}
+.Kenny{
+    display: flex;
+    width: 10%;
+    height: 10%;
+    animation-name: Kenny;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes Kyle {
+    0% {
+        transform: translateY(500%);
+        visibility: visible;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes Stan {
+    0% {
+        transform: translateY(500%);
+        visibility: visible;
+    }
+    100% {
+        transform: translateY(0);
+    }
+} 
+@keyframes Cartman {
+    0% {
+        transform: translateY(500%);
+        visibility: visible;
+    }
+    100% {
+        transform: translateY(0);
+    }
+} 
+@keyframes Kenny {
+    0% {
+        transform: translateY(500%);
+        visibility: visible;
+    }
+    100% {
+        transform: translateY(0);
+    }
+} 
