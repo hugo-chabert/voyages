@@ -4,7 +4,7 @@
 /*footer*/
 
 
-/*Page de presentation des explorateur*/
+
 /*Presentation de groupe*/
 
 #myVideo {
@@ -62,7 +62,7 @@ div p {
     text-shadow: 5px 5px 5px black;
 }
 div:target p {
-    height: 20em;
+    height: 30em;
     opacity: 1;
     padding: 20px;
 }
