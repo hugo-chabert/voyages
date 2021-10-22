@@ -62,7 +62,7 @@ div p {
     text-shadow: 5px 5px 5px black;
 }
 div:target p {
-    height: 30em;
+    height: 25em;
     opacity: 1;
     padding: 20px;
 }
