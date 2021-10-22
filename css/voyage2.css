@@ -7,70 +7,97 @@
 /*Page de presentation des explorateur*/
 /*Presentation de groupe*/
 
-.BodyExplo{
-    background-attachment: fixed;
-    background-size: 100%;
-    /*background-image: url(https://media0.giphy.com/media/J4yNRingyayMMIapTH/giphy.gif);*/
-}
-
 #myVideo {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    z-index: -1;
 }
   
-.ContainerExplo{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 500px;
-    position: absolute;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    height: 150vh;
 }
-
-#float{
-    float: left;
+.ContainerExplo {
     width: 40%;
+    margin: auto;
 }
-
+div a {
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    overflow: hidden;
+    border-bottom: 3px solid #aaa69d;
+    border-radius: 10px;
+}
+div p {
+    padding: 10px;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    background: #3c9b63;
+    color: #fff;
+    overflow: hidden;
+    letter-spacing: 3px;
+    font-size: 20px;
+    transition: 2s;
+    z-index: 0;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+}
+div:target p {
+    height: 20em;
+    opacity: 1;
+    padding: 20px;
+}
 .LogoPres{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
 }
 
-.PresentGroup{
-    width: 50%;
-    background: rgba(255, 255, 255, 0.7);
-    border: solid 25px rgb(255, 255, 255, 0.7);
-    font-size: 38px;
-    border-radius: 50px;
-    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.425);
-}
-
-/*Presentation perso */
-
-.PresentPerso{
+.GrandTab{
     display: flex;
     flex-direction: row;
-    border: solid 25px rgb(255, 255, 255, 0.7);
-    border-radius: 50px;
-    background-color: rgba(255, 255, 255, 0.7);
-    width: 70%;
-
-}
-
-.TextPr{
-    font-size: 35px;
-    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.425);
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .Tab{
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.438);
-    border-radius: 40px;
+    padding: 10px;
+    height: 0;
+    opacity: 0;
+    background: #3c9b63;
+    color: #fff;
+    overflow: hidden;
+    letter-spacing: 3px;
+    font-size: 15px;
+    transition: 2s;
+    z-index: 0;   
+    text-shadow: 5px 5px 5px black;
+
+}
+div:target .Tab {
+    height: 60em;
+    width: 60em;
+    opacity: 1;
+    padding: 20px;
+    position: center;
 }
 
 .Flag{
@@ -117,4 +144,9 @@
 .ImgTab{
     width: 304px;
     height: 304px;
+}
+
+div a:hover{
+    box-shadow: rgba(0, 0, 0, 0.466) 5px 5px 5px 5px;
+    background-color: rgb(235, 235, 235);
 }
