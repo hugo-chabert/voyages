@@ -85,7 +85,6 @@ body{
     align-items: center;    
     animation-name: Kyle;
     animation-duration: 3s;
-    animation-fill-mode: both;
 }
 
 .StanDIV{
@@ -94,7 +93,6 @@ body{
     align-items: center;    
     animation-name: Stan;
     animation-duration: 2s;
-    animation-fill-mode: both;
 }
 
 .CartmanDIV{
@@ -103,7 +101,6 @@ body{
     align-items: center;    
     animation-name: Cartman;
     animation-duration: 4s;
-    animation-fill-mode: both;
 }
 
 .KennyDIV{
@@ -112,7 +109,6 @@ body{
     align-items: center;    
     animation-name: Kenny;
     animation-duration: 1s;
-    animation-fill-mode: both;
 }
 
 .Explications{
