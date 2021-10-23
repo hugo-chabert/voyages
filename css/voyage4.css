@@ -1,10 +1,6 @@
-.titre{
-    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 1px;
-    color: white;
+@font-face{
+    font-family: south-park;
+    src: url(../font/south-park.ttf);
 }
 
 body{
@@ -12,6 +8,10 @@ body{
     background-repeat: no-repeat;
     background-size: 110%;
     background-attachment: fixed;
+}
+
+.titre{
+    text-align: center;
 }
 
 .text{
@@ -112,16 +112,12 @@ body{
 }
 
 .Explications{
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 30px;
     margin-top: 2%;
-    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
-    letter-spacing: 1px;
-    padding: 2%;
-    color: white;
+    font-family: south-park;
+    letter-spacing: 2px;
+    color: #FDAF01;
     text-align: center;
-    width: 20%;
-    margin-left: 40%;
+    font-size: 40px;
 }
 
 .Kyle{
