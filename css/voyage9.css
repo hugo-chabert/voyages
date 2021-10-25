@@ -6,6 +6,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 @font-face { 	font-family: "LOTR"; 	src: url('../images/morris-roman/MorrisRoman-Black.ttf'); }
 
@@ -17,26 +18,43 @@
     min-height: 100%;
     z-index: -1;
 }
-
+#MT {
+    height: 300px;
+    width: 300px;
+}
+.AboutMT {
+    display: flex;
+    justify-content: space-around;
+    font-family: LOTR;
+    letter-spacing: 1px;
+    height: 200px;
+    width: 100%;
+    font-size: 20px;
+}
+.AboutMT p {
+    width: 750px;
+    height: 250px;
+    font-size: 25px;
+}
 .container {
     display: flex;
     flex-direction: column;
-    height: 200vh;
+    height: 250vh;
     z-index: 1;
 }
 
 .container1P {
     display: flex;
     flex-flow: row wrap;
-    height: 50%;
+    height: 45%;
     scroll-behavior: smooth;
 }
 
 .containerP2 {
     background-color: var(--color-background);
     display: flex;
-    flex-flow: row wrap;
-    height: 50%;
+    flex-direction: column;
+    height: 55%;
     width: 100%;
 }
 
@@ -62,7 +80,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: textANIM 12s;
+    animation: textANIM 10s;
     padding: 5px;
 }
 
@@ -84,7 +102,64 @@
     color: var(--color-span);
 }
 
-.
+.Presentation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+
+.containerP2 div h1 {
+    padding: 15px;
+    font-family: LOTR;
+    text-decoration: underline;
+}
+.containerP2 div h2 {
+    font-family: LOTR;
+    text-decoration: underline;
+    text-align: center;
+    padding: 15px;
+}
+
+.discover {
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+    margin: 150px auto;
+}
+
+.slider {
+    width: calc(600px * 3);
+    animation:  slides 10s infinite;
+}
+
+.slide {
+    float: left;
+}
+@keyframes slides {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-600px);
+    }
+    43% {
+        transform: translateX(-600px);
+    }
+    66% {
+        transform: translateX(-1200px);
+    }
+    76% {
+        transform: translateX(-1200px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 
 @keyframes textANIM {
     0% {
