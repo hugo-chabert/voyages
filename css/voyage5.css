@@ -1,0 +1,21 @@
+@font-face{
+    font-family: the-simpsons;
+    src: url(../font/the-simpsons.otf);
+}
+
+#myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-1;
+}
+
+.titre{
+    font-family: the-simpsons;
+    text-align: center;
+    font-size: 250%;
+    color: #FFDE00;
+    text-shadow: -2px 2px #231F20;
+}
