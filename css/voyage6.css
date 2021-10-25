@@ -1,6 +1,6 @@
-/*header*/
-/*footer*/
-/*Root*/
+/***********header************/
+/*******footer********/
+/*******Root*******/
 :root{
     --Red- :rgb(190, 26, 26);
     --Yellow-: rgb(175, 173, 15);
@@ -8,7 +8,7 @@
     --Black-:rgb(0, 0, 0);
     --Transparent:rgba(255, 255, 255, 0);
 }
-/*Background*/
+/**************Background***************/
 
 #VideoVietnam {
     position: fixed;
@@ -23,16 +23,22 @@
     display: flex;
     flex-direction: column;
     z-index: 1;
-    height: 500vh;
+    height: 1000vh;
 }
 
-/*Le Vietnam Page principale*/
+/**************Le Vietnam Page principale****************/
+
 .UpperPart{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height:20%;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    height:10.6%;
     border: solid 50px var(--Black-);
+}
+
+.BoxDiscover{
+    margin-left: 7%;
+    margin-bottom: 7%;
 }
 
 *, *:after, *:before {
@@ -41,7 +47,12 @@
 }
 
 *{
-    margin:0;padding:0;border:0 none;position: relative; outline: none;
+    margin:0;
+    padding:0;
+    border:0 none;
+    position: relative; 
+    outline: none;
+    scroll-behavior: smooth;
 }
 
 h2 {
@@ -127,10 +138,10 @@ h2 > a:focus:before {
 }
   
 
-/*Page "Sommaire"*/
+/****************Page "Sommaire"*****************/
 
 .MiddlePart{
-    height: 20%;
+    height: 10.7%;
     background-color: var(--Black-);
     display: flex;
     flex-direction: column;
@@ -140,7 +151,7 @@ h2 > a:focus:before {
 .Vn{
     text-align: center;
     color: var(--White-);
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .LeVn{
@@ -162,10 +173,15 @@ h2 > a:focus:before {
     width: 100%;
 }
 
+.Link{
+    text-decoration: none;
+    color: inherit;
+}
+
 .ImgVn{
     position:relative;
     padding:0;
-    width:400px;
+    width:300px;
     display:block;
     cursor:pointer;
     overflow:hidden;
@@ -174,15 +190,15 @@ h2 > a:focus:before {
 
 .Content {
     opacity:0;
-    font-size: 40px;
+    font-size: 30px;
     position:absolute;
     backdrop-filter: blur(0.1em);
     top:0;
     left:0;
     color:#000000;
     text-shadow: 5px 5px 2px rgba(255, 255, 255, 0.123);
-    width:400px;
-    height:230px;
+    width:300px;
+    height:190px;
     transition: all 1s ease-out;
     text-align:center;
 }
@@ -200,7 +216,7 @@ h2 > a:focus:before {
 
 .ImgVn .Content:hover .Text {
     opacity:1;
-    transform:translateY(100px);
+    transform:translateY(70px);
 }
 
 /*Espace*/
@@ -214,6 +230,22 @@ h2 > a:focus:before {
 
 .LowerPart{
     background-color: var(--White-);
-    height: 25%;
+    height: 80%;
     display: flex;
+    flex-direction: row;
+}
+
+.PartImg{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.PartText{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
 }
