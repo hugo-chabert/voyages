@@ -1,6 +1,7 @@
 :root {
     --color-span: rgb(255, 255, 255);
-    --color-background: rgb(134, 111, 96);
+    --color-background: rgb(245, 245, 245);
+    --collor-picture: rgba(0, 0, 0, 0.37);
 }
 
 * {
@@ -21,32 +22,33 @@
 #MT {
     height: 300px;
     width: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px var(--collor-picture)
 }
 .AboutMT {
     display: flex;
     justify-content: space-around;
-    font-family: LOTR;
+    font-family: 'Helvetica Neue', sans-serif;
     letter-spacing: 1px;
     height: 200px;
     width: 100%;
-    font-size: 20px;
 }
 .AboutMT p {
     width: 750px;
     height: 250px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .container {
     display: flex;
     flex-direction: column;
-    height: 250vh;
+    height: 270vh;
     z-index: 1;
 }
 
 .container1P {
     display: flex;
     flex-flow: row wrap;
-    height: 45%;
+    height: 40%;
     scroll-behavior: smooth;
 }
 
@@ -54,7 +56,7 @@
     background-color: var(--color-background);
     display: flex;
     flex-direction: column;
-    height: 55%;
+    height: 60%;
     width: 100%;
 }
 
@@ -122,18 +124,24 @@
     padding: 15px;
 }
 
+.containerP2 div h3 {
+    font-family: LOTR;
+    text-decoration: underline;
+    text-align: center;
+    padding: 15px;
+}
+
 .discover {
-    width: 600px;
-    height: 500px;
+    width: 1200px;
+    height: 800px;
     overflow: hidden;
-    margin: 150px auto;
+    margin: 0 auto;
 }
 
 .slider {
-    width: calc(600px * 3);
+    width: calc(1300px * 3);
     animation:  slides 10s infinite;
 }
-
 .slide {
     float: left;
 }
@@ -145,16 +153,16 @@
         transform: translateX(0);
     }
     33% {
-        transform: translateX(-600px);
+        transform: translateX(-1300px);
     }
     43% {
-        transform: translateX(-600px);
+        transform: translateX(-1300px);
     }
     66% {
-        transform: translateX(-1200px);
+        transform: translateX(-2600px);
     }
     76% {
-        transform: translateX(-1200px);
+        transform: translateX(-2600px);
     }
     100% {
         transform: translateX(0);
