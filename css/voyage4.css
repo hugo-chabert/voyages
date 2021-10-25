@@ -181,3 +181,32 @@ body{
 .Kenny:hover + .textKE{
     display: block;
 }
+
+.text2{
+    font-family: south-park;
+    text-align: center;
+    color: #FDAF01;
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+.batiments{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.ecole{
+    width: 100%;
+}
+
+.ecoleText{
+    color: white;
+    font-family: south-park;
+    margin-right: 70%;
+
+}
+
+.imgEcole{
+}
