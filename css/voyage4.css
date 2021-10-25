@@ -190,24 +190,25 @@ body{
     margin-top: 10%;
 }
 
-.batiments{
+.Batiments{
     display: flex;
     flex-direction: row;
     margin-top: 5%;
     width: 100%;
+    justify-content: center;
 }
 
-.ecole{
+.batiment{
     width: 50%;
     display: flex;
     flex-direction: column;    
     align-items: center;
     justify-content: center;
 }
-}
 
-.ecoleText{
-    color: white;
+.batimentText{
+    color: #FDAF01;
+    text-shadow: 2px 2px 8px black;
     font-family: south-park;
     width: 50%;
     display: flex;
@@ -215,8 +216,8 @@ body{
     align-items: center;
     justify-content: center;
 }
-}
 
-.imgEcole{
+.imgBatiment{
+    width: 80%;
 
 }
