@@ -198,15 +198,25 @@ body{
 }
 
 .ecole{
-    width: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+}
 }
 
 .ecoleText{
     color: white;
     font-family: south-park;
-    margin-right: 70%;
-
+    width: 50%;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+}
 }
 
 .imgEcole{
+
 }
