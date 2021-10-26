@@ -1,0 +1,17 @@
+:root {
+    --bg-color: #f6f6f1;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height:100%;
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.66)),url("../images/1920x1080-px-map-Middle-earth-The-Lord-of-the-Rings-1056377-wallhere.com.jpg");
+    background-size: cover;
+}
+.container {
+    display: flex;
+
+}
