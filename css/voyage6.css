@@ -9,6 +9,15 @@
     --Transparent-:rgba(255, 255, 255, 0);
     --Shadow-:rgba(0, 0, 0, 0.219);
 }
+
+@font-face{
+    font-family: Vietnam;
+    src: url(../font/Vietnam.ttf);
+}
+@font-face{
+    font-family: Vietnam2;
+    src: url(../font/Vietnam2.ttf);
+}
 /**************Background***************/
 
 #VideoVietnam {
@@ -33,8 +42,9 @@
     display: flex;
     flex-flow: row wrap;
     align-items: flex-end;
-    height:9.3%;
+    height:9.9%;
     border: solid 50px var(--Black-);
+    font-family: Vietnam;
 }
 
 .BoxDiscover{
@@ -147,6 +157,7 @@ h2 > a:focus:before {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-family: Vietnam;
 }
 
 .Vn{
@@ -228,7 +239,7 @@ h2 > a:focus:before {
 
 .Space{
     background-color:var(--Transparent);
-    height: 3%;
+    height: 2%;
 }
 
 /*Page de Présentation*/
@@ -238,6 +249,7 @@ h2 > a:focus:before {
     height: 80%;
     display: flex;
     flex-direction: row;
+    font-family: Vietnam2;
 }
 
 .Box{
@@ -251,9 +263,10 @@ h2 > a:focus:before {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     row-gap: 50px ;
     width: 90%;
-    font-size: 25px;
+    font-size: 21px;
     padding: 9%;
 }
 
