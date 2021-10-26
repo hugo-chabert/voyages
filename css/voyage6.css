@@ -6,7 +6,8 @@
     --Yellow-: rgb(175, 173, 15);
     --White-:rgb(255, 255, 255);
     --Black-:rgb(0, 0, 0);
-    --Transparent:rgba(255, 255, 255, 0);
+    --Transparent-:rgba(255, 255, 255, 0);
+    --Shadow-:rgba(0, 0, 0, 0.219);
 }
 /**************Background***************/
 
@@ -23,7 +24,7 @@
     display: flex;
     flex-direction: column;
     z-index: 1;
-    height: 1000vh;
+    height: 1100vh;
 }
 
 /**************Le Vietnam Page principale****************/
@@ -32,7 +33,7 @@
     display: flex;
     flex-flow: row wrap;
     align-items: flex-end;
-    height:10.6%;
+    height:9.3%;
     border: solid 50px var(--Black-);
 }
 
@@ -141,7 +142,7 @@ h2 > a:focus:before {
 /****************Page "Sommaire"*****************/
 
 .MiddlePart{
-    height: 10.7%;
+    height: 10%;
     background-color: var(--Black-);
     display: flex;
     flex-direction: column;
@@ -178,10 +179,14 @@ h2 > a:focus:before {
     color: inherit;
 }
 
+.Link:hover{
+    color: var(--Red-);
+}
+
 .ImgVn{
     position:relative;
     padding:0;
-    width:300px;
+    width:400px;
     display:block;
     cursor:pointer;
     overflow:hidden;
@@ -197,8 +202,8 @@ h2 > a:focus:before {
     left:0;
     color:#000000;
     text-shadow: 5px 5px 2px rgba(255, 255, 255, 0.123);
-    width:300px;
-    height:190px;
+    width:400px;
+    height:220px;
     transition: all 1s ease-out;
     text-align:center;
 }
@@ -223,7 +228,7 @@ h2 > a:focus:before {
 
 .Space{
     background-color:var(--Transparent);
-    height: 5%;
+    height: 3%;
 }
 
 /*Page de Présentation*/
@@ -235,17 +240,44 @@ h2 > a:focus:before {
     flex-direction: row;
 }
 
-.PartImg{
-    width: 50%;
+.Box{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-.PartText{
-    width: 50%;
+.TextImg{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: row;
+    justify-content: space-around;
+    row-gap: 50px ;
+    width: 90%;
+    font-size: 25px;
+    padding: 9%;
+}
+
+.Txt{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-shadow: 5px 5px 2px var(--Shadow-) ;
+}
+
+#Pic{
+    border-radius: 30px;   
+    box-shadow: 5px 5px 5px 5px var(--Shadow-);
+}
+
+#ButtonUp{
+    width: 50px;
+    height: 50px;
+    margin-left: 90%;
+}
+
+#ButtonUp{
+    transition: transform .7s ease-in-out;
+}
+#ButtonUp:hover {
+    transform: rotate(720deg);
 }
