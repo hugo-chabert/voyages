@@ -190,7 +190,7 @@ body{
     margin-top: 10%;
 }
 
-.Batiments{
+.container{
     display: flex;
     flex-direction: row;
     margin-top: 5%;

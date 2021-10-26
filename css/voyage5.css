@@ -1,3 +1,8 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
 @font-face{
     font-family: the-simpsons;
     src: url(../font/the-simpsons.otf);
@@ -58,23 +63,55 @@
     }
 }
 
-.blocks{
+.container{
     display: flex;
 }
 
 .blockPlace{
     width: 50%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 30px;
     margin-top: 2%;
-    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
     letter-spacing: 1px;
     padding: 2%;
     color: white;
+    font-family: the-simpsons;
 }
 
 .blockNull{
     width: 50%;
     padding: 2%;
+}
+
+.perso{
+    transition: transform 1s ease-in-out;
+}
+
+.perso:hover{
+    transform: scaleX(-1);
+}
+
+.container2{
+    margin: 0;
+    padding: 0;
+    background-color: #54B4E6;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+}
+
+.batiment{
+    display: flex;
+    justify-content: center;
+}
+
+.leftright{
+    display: flex;
+}
+
+.textImage{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgWidth{
+    width: 100%;
 }
