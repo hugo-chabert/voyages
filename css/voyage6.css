@@ -265,7 +265,7 @@ h2 > a:focus:before {
     justify-content: space-around;
     align-items: center;
     row-gap: 50px ;
-    width: 90%;
+    width: 95%;
     font-size: 21px;
     padding: 9%;
 }
