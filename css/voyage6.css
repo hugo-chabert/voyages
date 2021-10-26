@@ -221,7 +221,7 @@ h2 > a:focus:before {
 
 .ImgVn .Content:hover .Text {
     opacity:1;
-    transform:translateY(70px);
+    transform:translateY(100px);
 }
 
 /*Espace*/
