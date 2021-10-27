@@ -22,7 +22,7 @@
     flex-direction: column;
     background:linear-gradient(0deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),url(../images/tolkien.jpeg);
     background-size: cover;
-    height: 60%;
+    height: 50%;
     min-width: 50%;
 }
 .txtOpening {
@@ -53,7 +53,7 @@
     height: 50%;
 }
 .containerP2 {
-    height: 40%;
+    height: 50%;
     min-width: 50%;
     background:linear-gradient(0deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),url(../images/1920x1080-px-map-Middle-earth-The-Lord-of-the-Rings-1056377-wallhere.com.jpg);
     background-size: cover;
