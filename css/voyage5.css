@@ -3,6 +3,15 @@ body{
     margin: 0;
 }
 
+:root{
+    --yellowSP--:#FDAF01;
+    --yellowSimp--:#FFDE00;
+    --skyBlue--:#54B4E6;
+    --grey--:#231F20;
+    --white2--:#f2f2f2;
+    --white3--:#ddd;
+}
+
 @font-face{
     font-family: the-simpsons;
     src: url(../font/the-simpsons.otf);
@@ -21,8 +30,8 @@ body{
     font-family: the-simpsons;
     text-align: center;
     font-size: 250%;
-    color: #FFDE00;
-    text-shadow: -2px 2px #231F20;
+    color: var(--yellowSimp--);
+    text-shadow: -2px 2px var(--grey--);
     margin-bottom: 2%;
     animation-name: titreAnimation;
     animation-duration: 3s;
@@ -31,20 +40,20 @@ body{
 
 .SP{
     text-decoration: none;
-    color: #FDAF01;
+    color: var(--yellowSP--);
 }
 
 .text1{
     font-family: the-simpsons;
-    color: #FFDE00;    
-    text-shadow: -2px 2px #231F20;
+    color: var(--yellowSimp--);    
+    text-shadow: -2px 2px var(--grey--);
     text-align: center;
 }
 
 .text2{
     font-family: the-simpsons;
-    color: #FFDE00;    
-    text-shadow: -2px 2px #231F20;
+    color: var(--yellowSimp--);    
+    text-shadow: -2px 2px var(--grey--);
     text-align: center;
     margin-top: 1%;
 }
@@ -92,7 +101,7 @@ body{
 
 .container2{  
     padding: 2% ;
-    background-color: #54B4E6;
+    background-color: var(--skyBlue--);
     border-top-right-radius: 2%;
     border-top-left-radius: 2%;
 }
@@ -126,12 +135,12 @@ body{
 }
   
 #place td, #place th {
-    border: 1px solid #ddd;
+    border: 1px solid var(--white3--);
     padding: 8px;
 }
   
 #place tr:nth-child(even){
-    background-color: #f2f2f2;
+    background-color: var(--white2--);
 }
 
 #place tr:nth-child(odd){
@@ -139,13 +148,13 @@ body{
 }
   
 #place tr:hover {
-    background-color: #ddd;
+    background-color: var(--white3--);
 }
   
 #place th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #FFDE00;
+    background-color: var(--yellowSimp--);
     color: white;
 }

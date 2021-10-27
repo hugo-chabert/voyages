@@ -1,13 +1,5 @@
-.pays{
-    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 1px;
-}
-
 body{
-    background-image: url(../images/toronto.jpg);
+    background-image: url(../images/canada/toronto.jpg);
     background-repeat: no-repeat;
     background-size: 150%;
     background-attachment: fixed;
@@ -19,6 +11,14 @@ body{
 
 .blanc{
     color: white;
+}
+
+.pays{
+    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 .text{
