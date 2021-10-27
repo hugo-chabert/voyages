@@ -34,6 +34,7 @@
     flex-direction: column;
     z-index: 1;
     height: 1100vh;
+    width: 100%;
 }
 
 /**************Le Vietnam Page principale****************/
@@ -42,7 +43,7 @@
     display: flex;
     flex-flow: row wrap;
     align-items: flex-end;
-    height:9.9%;
+    height:9.2%;
     border: solid 50px var(--Black-);
     font-family: Vietnam;
 }
@@ -163,7 +164,7 @@ h2 > a:focus:before {
 .Vn{
     text-align: center;
     color: var(--White-);
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .LeVn{
