@@ -7,6 +7,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -18,7 +19,7 @@
 .containerP1 {
     display: flex;
     flex-direction: column;
-    background:linear-gradient(0deg, rgba(255, 255, 255, 0.58),rgba(206, 150, 94, 0.7) ),url(../images/tolkien.jpeg);
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),url(../images/tolkien.jpeg);
     background-size: cover;
     height: 50%;
     min-width: 50%;
@@ -31,6 +32,12 @@
     height: 20%;
     color: var(--txt-color);
     padding-top: 100px;
+    font-size: 40px;
+}
+
+.txtOpening p a {
+    text-decoration: underline;
+    color: var(--txt-color);
 }
 
 .contentEnding {
@@ -47,13 +54,13 @@
 .containerP2 {
     height: 50%;
     min-width: 50%;
-    background:linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),url(../images/1920x1080-px-map-Middle-earth-The-Lord-of-the-Rings-1056377-wallhere.com.jpg);
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),url(../images/1920x1080-px-map-Middle-earth-The-Lord-of-the-Rings-1056377-wallhere.com.jpg);
     background-size: cover;
 }
 #Moria {
     padding-top: 50px;
     height: 400px;
-    width: 320px;
+    width: 390px;
 }
 /*SLIDER */
 .Slider {
@@ -67,7 +74,7 @@
 
 .slides {
     width: calc(600px * 5);
-    animation:  slides 13s infinite;
+    animation:  slides 20s infinite;
 }
 .slide {
     float: left;
