@@ -250,6 +250,7 @@ h2 > a:focus:before {
     height: 80%;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     font-family: Vietnam2;
 }
 
@@ -266,7 +267,7 @@ h2 > a:focus:before {
     justify-content: space-around;
     align-items: center;
     row-gap: 50px ;
-    width: 95%;
+    width: 100%;
     font-size: 21px;
     padding: 9%;
 }
@@ -274,8 +275,8 @@ h2 > a:focus:before {
 .Txt{
     display: flex;
     align-items: center;
-    text-align: center;
     text-shadow: 5px 5px 2px var(--Shadow-) ;
+    padding:2%;
 }
 
 .Pic{
