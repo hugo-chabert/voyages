@@ -1,0 +1,157 @@
+:root {
+    --color-span: rgb(255, 255, 255);
+    --color-background: rgba(0, 0, 0, 0.8);
+    --collor-picture: rgba(0, 0, 0, 0.37);
+    --color-title-green: rgb(47, 255, 0);
+    --color-txt-white: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+@font-face { 	font-family: "LOTR"; 	src: url('../images/morris-roman/MorrisRoman-Black.ttf'); }
+
+#MyVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+#MM {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px var(--collor-picture)
+}
+.AboutMM {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Helvetica Neue', sans-serif;
+    letter-spacing: 1px;
+    height: 200px;
+    width: 100%;
+}
+.AboutMM p {
+    width: 750px;
+    height: 250px;
+    font-size: 20px;
+    color: var(--color-txt-white);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 270vh;
+    z-index: 1;
+}
+
+.container1P {
+    display: flex;
+    flex-flow: row wrap;
+    height: 37%;
+    scroll-behavior: smooth;
+}
+
+.containerP2 {
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    height: 63%;
+    width: 100%;
+}
+
+#BOXtextANIM {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+}
+
+
+#BOXtextANIM span p a{
+    font-family: LOTR;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 2px;
+    color: var(--color-title-green);
+    text-decoration: none;
+}
+
+
+.Presentation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 325px;
+    padding: 15px;
+}
+
+.containerP2 div h1 {
+    padding: 15px;
+    font-family: LOTR;
+    text-decoration: underline;
+    color: var(--color-txt-white);
+}
+.containerP2 div h2 {
+    font-family: LOTR;
+    text-decoration: underline;
+    text-align: center;
+    padding: 15px;
+}
+
+.containerP2 div h3 {
+    font-family: LOTR;
+    text-decoration: underline;
+    text-align: center;
+    padding: 15px;
+    color: var(--color-txt-white);
+}
+.containerP2 div h3 a{
+    font-family: LOTR;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    color: var(--txt-color);
+}
+
+.discover {
+    width: 1200px;
+    height: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slider {
+    width: calc(1300px * 3);
+    animation:  slides 10s infinite;
+}
+.slide {
+    float: left;
+}
+@keyframes slides {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-1300px);
+    }
+    43% {
+        transform: translateX(-1300px);
+    }
+    66% {
+        transform: translateX(-2600px);
+    }
+    76% {
+        transform: translateX(-2600px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
