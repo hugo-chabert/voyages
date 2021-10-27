@@ -5,6 +5,10 @@ body{
     background-attachment: fixed;
 }
 
+:root{
+    --grey--:rgba(0, 0, 0, 0.3);
+}
+
 .rouge{
     color: red;
 }
@@ -22,8 +26,7 @@ body{
 }
 
 .text{
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--grey--);
     border-radius: 30px;
     width: 60%;
     justify-content: center;
@@ -33,4 +36,97 @@ body{
     letter-spacing: 1px;
     padding: 2%;
     color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.SE{
+    width: 50%;
+}
+
+.HK{
+    width: 40%;
+}
+
+.poutine{
+    width: 50%;
+}
+
+.putin{
+    display: none;
+    width: 10%;
+}
+
+.Raptors{
+    width: 50%;
+}
+.textRaptors2{
+    display: none;
+}
+
+.textSE:hover + .SE{  
+    animation-name: flip;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.textHK:hover + .HK{
+    transform-origin: top center;
+    animation-name: swing;
+    animation-duration: 1s;
+    animation-fill-mode: both;    
+}
+
+.textPT:hover + .putin{
+    display: block;
+}
+
+.textRaptors:hover + .textRaptors2{
+    display: block;
+}
+
+
+    
+@keyframes flip {
+    0% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    animation-timing-function: ease-out;
+    }
+    40% {
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    animation-timing-function: ease-out;
+    }
+    50% {
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    animation-timing-function: ease-in;
+    }
+    80% {
+    transform: perspective(400px) scale3d(.95, .95, .95);
+    animation-timing-function: ease-in;
+    }
+    100% {
+    transform: perspective(400px);
+    animation-timing-function: ease-in;
+    }
+}
+
+@keyframes swing {
+    20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+    }
+    40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+    }
+    60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+    }
+    80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+    }
+    100% {
+    transform: rotate3d(0, 0, 1, 0deg);
+    }
 }
