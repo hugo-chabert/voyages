@@ -60,11 +60,6 @@ body{
     width: 50%;
 }
 
-.putin{
-    display: none;
-    width: 10%;
-}
-
 .Raptors{
     width: 50%;
 }
@@ -72,24 +67,20 @@ body{
     display: none;
 }
 
-.textSE:hover + .SE{  
+.SE:hover{  
     animation-name: flip;
     animation-duration: 1s;
     animation-fill-mode: both;
 }
 
-.textHK:hover + .HK{
+.HK:hover{
     transform-origin: top center;
     animation-name: swing;
     animation-duration: 1s;
     animation-fill-mode: both;    
 }
 
-.textPT:hover + .putin{
-    display: block;
-}
-
-.textRaptors:hover + .textRaptors2{
+.Raptors:hover + .textRaptors2{
     display: block;
 }
 
