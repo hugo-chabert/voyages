@@ -1,3 +1,8 @@
+@font-face{
+    font-family: canadian;
+    src: url(../font/canadian.ttf);
+}
+
 body{
     background-image: url(../images/canada/toronto.jpg);
     background-repeat: no-repeat;
@@ -88,7 +93,46 @@ body{
     display: block;
 }
 
+.leRaptor{
+    width: 100%;
+    display: none;
+}
 
+.NBA:hover + .leRaptor{
+    display: block;
+    animation-name: zoomIn;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+
+.containerPlace{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+    align-items: center; 
+}
+
+.imgPlace{
+    width: 50%;    
+}
+
+.flexImg{
+    display: flex;    
+    justify-content: center;
+    width: 50%;  
+}
+
+.flexTxt{
+    display: flex;    
+    justify-content: center;    
+    align-items: center;
+    height: 20%;
+    width: 50%;    
+    background-color: white;
+    border-radius: 2%;
+    font-family: canadian;
+    font-size: 200%;
+}
     
 @keyframes flip {
     0% {
@@ -130,3 +174,14 @@ body{
     transform: rotate3d(0, 0, 1, 0deg);
     }
 }
+
+
+@keyframes zoomIn {
+    0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+    }
+    100% {
+    opacity: 1;
+    }
+} 
