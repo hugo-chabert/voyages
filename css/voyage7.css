@@ -2,18 +2,28 @@
 
 /************FOOTER**************/
 
-/************ROOT**************/
+/************ROOT & FONT**************/
 :root{
     --Blue-:#708AFF;
     --Green-:#adbe74;
     --White-:rgb(255, 255, 255);
     --Black-:rgb(0, 0, 0);
 }
+
+@font-face{
+    font-family: Avatar;
+    src: url(../font/avatar.ttf);
+}
+@font-face{
+    font-family: Papyrus;
+    src: url(../font/papyrus.ttf);
+}
 /************BACKGROUND**************/
 
 body{
-    background-image: url();
+    background-image: url(../images/pandora.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /************MAIN ET MISE EN PAGE**************/
@@ -29,11 +39,12 @@ body{
 .Pandora {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    width: 25%;
+    width: 30%;
+    padding-left:34%;
 }
 @-webkit-keyframes fadeInUp {
     0% {
@@ -47,7 +58,6 @@ body{
     -webkit-transform: none;
     transform: none;
     }
-    
 }
 
 @keyframes fadeInUp {
@@ -63,9 +73,195 @@ body{
     }
 } 
 
-/************HEADER**************/
+/************ACCUEIL**************/
 
-/************HEADER**************/
+.Upperpart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Sommaire{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.PlanetBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    animation-name: Planet;
+    animation-duration: 6s;
+}
+.HabitantBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    animation-name: Habitant;
+    animation-duration: 7s;
+}
+.FauneBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    animation-name: Faune;
+    animation-duration: 8s;
+}
+.PlaceBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    animation-name: Place;
+    animation-duration: 9s;
+}
+.Welcome{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    animation-name: Place;
+    animation-duration: 4s;
+    font-size: 50px;  
+    font-family: Avatar;
+}
+
+.Planet:hover{
+    transition: transform 2s ease-in-out;
+    transform: rotate(360deg);
+}
+.Habitant:hover{
+    transform-origin: top center;
+    animation-name: swing;
+    animation-duration: 1s;
+    animation-fill-mode: both;    
+}
+.Faune:hover{
+    transform-origin: top center;
+    animation-name: swing;
+    animation-duration: 1s;
+    animation-fill-mode: both;    
+}
+.Place:hover{
+    transition: transform 2s ease-in-out;
+    transform: rotate(360deg);
+}
+
+.Planet:hover + .TextPlanet{
+    display: block;
+}
+.Habitant:hover + .TextHab{
+    display: block;
+}
+.Faune:hover + .TextFau{
+    display: block;
+}
+.Place:hover + .TextPLace{
+    display: block;
+}
+
+.TextPlanet{
+    display: none;
+    font-size: 30px;
+    background-color: var(--Black-);
+    color: var(--Blue-);
+    padding: 20px;
+    border: 2px solid var(--Green-);
+    border-radius: 20px;
+    font-family: Avatar;
+}
+.TextHab{
+    display: none;
+    font-size: 30px;
+    background-color: var(--Black-);
+    color: var(--Green-);
+    padding: 20px;
+    border: 2px solid var(--Blue-);
+    border-radius: 20px;
+    font-family: Avatar;
+}
+.TextFau{
+    display: none;
+    font-size: 30px;
+    background-color: var(--Black-);
+    color: var(--Blue-);
+    padding: 20px;
+    border: 2px solid var(--Green-);
+    border-radius: 20px;
+    font-family: Avatar;
+}
+.TextPLace{
+    display: none;
+    font-size: 30px;
+    background-color: var(--Black-);
+    color: var(--Green-);
+    padding: 20px;
+    border: 2px solid var(--Blue-);
+    border-radius: 20px;
+    font-family: Avatar;
+}
+
+@keyframes Welcome {
+    0% {
+        transform: translateY(500%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes Planet {
+    0% {
+        transform: translateY(500%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes Habitant {
+    0% {
+        transform: translateY(500%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes Faune {
+    0% {
+        transform: translateY(500%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes Place {
+    0% {
+        transform: translateY(500%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes swing {
+    20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+    }
+    40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+    }
+    60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+    }
+    80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+    }
+    100% {
+    transform: rotate3d(0, 0, 1, 0deg);
+    }
+}
+
+
+/************CONTENT**************/
+
+
 
 /************HEADER**************/
 
