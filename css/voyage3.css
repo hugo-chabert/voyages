@@ -164,13 +164,19 @@ body{
     letter-spacing: 1px;
 }
 
-.imgText:hover{
+.link:hover{
     color: red;
     letter-spacing: 2px;
 }
 
 .placeParPlace{
     background-color: white;
+    padding: 1%;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
 }
 
 @keyframes flip {
