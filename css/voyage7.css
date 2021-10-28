@@ -8,6 +8,7 @@
     --Green-:#adbe74;
     --White-:rgb(255, 255, 255);
     --Black-:rgb(0, 0, 0);
+    --LightGrey-:rgb(204, 204, 204);
 }
 
 @font-face{
@@ -27,14 +28,17 @@ body{
 }
 
 /************MAIN ET MISE EN PAGE**************/
-*{
-    box-sizing: inherit;
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 .Container{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    gap: 100px;
+    height: 1000vh
 }        
             
 /************TITRE DE PAGE**************/
@@ -77,11 +81,13 @@ body{
 
 /************ACCUEIL**************/
 
-.Upperpart{
+.UpperPart{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 50%;
+    gap: 50px;
+    height: 10%;
+    z-index: 1;
 }
 
 .Sommaire{
@@ -268,7 +274,55 @@ body{
     display: flex;
     flex-direction: column;
     background-color: var(--White-);
-    
+    align-items: center;
+    height: 40%;
+    z-index: 0;
+    font-family: Papyrus;
+}
+.BoxPresPlanet{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    gap: 50px;
+}
+.BoxPresPlanet h2{
+    text-align: center;
+    font-size: 40px;
+    padding: 2%;
+    border-bottom: var(--LightGrey-) 3px solid ;
+    width: 40%;
+}
+.TextImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.TextPresPlanet{
+    width: 50%;
+    font-size: 18px;
+}
+
+.BoxPresHab{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    gap: 50px;
+}
+.BoxPresHab h2{
+    text-align: center;
+    font-size: 40px;
+    padding: 2%;
+    border-bottom: var(--LightGrey-) 3px solid ;
+    width: 40%;
+}
+.TextPresHab{
+    width: 50%;
+    font-size: 18px;
 }
 
 /************HEADER**************/
