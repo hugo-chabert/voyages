@@ -3,13 +3,17 @@
     src: url(../font/canadian.ttf);
 }
 
+*{
+    scroll-behavior: smooth;    
+    padding: 0;
+    margin: 0;
+}
+
 body{
     background-image: url(../images/canada/toronto.jpg);
     background-repeat: no-repeat;
     background-size: 150%;
     background-attachment: fixed;
-    padding: 0;
-    margin: 0;
 }
 
 :root{
@@ -25,8 +29,8 @@ body{
 }
 
 .pays{
-    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
-    font-size: 20px;
+    font-family: canadian;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
     letter-spacing: 1px;
