@@ -325,7 +325,95 @@ body{
     font-size: 18px;
 }
 
-/************HEADER**************/
+.BoxPresFau{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    gap: 50px;
+}
+.BoxPresFau h2{
+    text-align: center;
+    font-size: 40px;
+    padding: 2%;
+    border-bottom: var(--LightGrey-) 3px solid ;
+    width: 40%;
+}
+.TextPresFau{
+    width: 50%;
+    font-size: 18px;
+}
 
-/************HEADER**************/
+.BoxPresPlace{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    gap: 50px;
+}
+.BoxPresPlace h2{
+    text-align: center;
+    font-size: 40px;
+    padding: 2%;
+    border-bottom: var(--LightGrey-) 3px solid ;
+    width: 40%;
+}
+.TextPresPlace{
+    width: 50%;
+    font-size: 18px;
+}
+/************IMage etc**************/
+
+.LowerPart{
+    display: flex;
+    background-color: var(--White-);
+    height: 45%;
+}
+.Caroussel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    font-family: Papyrus;
+}
+div#slider { 
+    width: 80%; 
+    height: 20% ;
+    overflow: hidden 
+} 
+div#slider figure {
+    position: relative; 
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+}
+div#slider figure img { 
+    width: 20%; height: auto; float: left; 
+}
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    left: 0;
+    text-align: left;
+    animation: 20s slidy infinite;
+  }
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+  }
 
