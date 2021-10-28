@@ -1,0 +1,187 @@
+:root {
+    --color-txt-black: rgb(0, 0, 0);
+    --color-txt-white: rgb(255, 255, 255);
+    --color-bg-black: rgb(0,0,0);
+    --color-bg-white: rgb(255, 255, 255);
+    --color-bg-whitesmoke: rgb(245, 245, 245);
+}
+
+@font-face { 	font-family: "Jap"; 	src: url('../images/Japanese_Brush/JAPAB___.ttf'); }
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#MyVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+/* CONTAIN ALL */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    z-index: 1;
+}
+/* CONTAIN ALL */
+/* PAGE 1 */
+.containTop {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+.Top {
+    display: flex;
+    height: 100%;
+}
+.Title {
+    display: flex;
+    align-items: center;
+    font-family: "Jap";
+    font-size: 50px;
+    padding-left: 50px;
+    width: 20%;
+}
+.Title a {
+    text-decoration: underline;
+    color: var(--color-txt-black);
+
+}
+/* FIN PAGE1 */
+/* PAGE2 */
+.containBottom {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    background-color: var(--color-bg-black);
+}
+
+#TitleBottom {
+    display: flex;
+    justify-content: center;
+    font-family: "Jap";
+    font-size: 50px;
+    width: 100%;
+    color: var(--color-txt-white);
+    padding-top: 15px;
+    text-decoration: underline;
+}
+.containCenterOfBottom {
+    display: flex;
+    height: 50%;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfBottom :nth-child(1){
+    width:5%;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfBottom :nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:45%;
+    background-color: whitesmoke;
+    font-family: Georgia;
+    letter-spacing: 2px;
+    line-height: 32px;
+    padding-left: 5px;
+}
+.containCenterOfBottom :nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:45%;
+    background-color: whitesmoke;
+
+}
+.containCenterOfBottom :nth-child(4){
+    width:5%;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfEnd {
+    display: flex;
+    height: 5%;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfEnd :nth-child(1){
+    width:5%;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfEnd :nth-child(2){
+    width:90%;
+    background-color: var(--color-bg-whitesmoke);
+    font-family: Georgia;
+    font-size: 35px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-align: center;
+    text-decoration: underline;
+}
+.containCenterOfEnd :nth-child(3){
+    width:5%;
+    background-color: var(--color-bg-black);
+}
+
+.containCenterOfEnd {
+    display: flex;
+    height: 5%;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfEnd :nth-child(1){
+    width:5%;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfEnd :nth-child(2){
+    width:90%;
+    background-color: var(--color-bg-whitesmoke);
+    font-family: Georgia;
+    font-size: 35px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-align: center;
+    text-decoration: underline;
+}
+.containCenterOfEnd :nth-child(3){
+    width:5%;
+    background-color: var(--color-bg-black);
+}
+/**/
+.containCenterOfEnd2 {
+    display: flex;
+    height: 34%;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfEnd2 :nth-child(1){
+    width:5%;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfEnd2 :nth-child(2){
+    width:90%;
+    background-color: var(--color-bg-whitesmoke);
+    font-family: Georgia;
+    font-size: 35px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-align: center;
+    text-decoration: underline;
+}
+.containCenterOfEnd2 :nth-child(3){
+    width:5%;
+    background-color: var(--color-bg-black);
+}
+/**/
+
+#drake {
+    width: 25px;
+    height: 25px;
+}
+#IframTokyo {
+    width: 525px;
+    height: 325px;
+}
+/* FIN PAGE2 */
