@@ -8,6 +8,8 @@ body{
     background-repeat: no-repeat;
     background-size: 150%;
     background-attachment: fixed;
+    padding: 0;
+    margin: 0;
 }
 
 :root{
@@ -41,6 +43,7 @@ body{
     letter-spacing: 1px;
     padding: 2%;
     color: white;
+    margin-bottom: 5%;
 }
 
 .container{
@@ -122,9 +125,54 @@ body{
     background-color: white;
     border-radius: 2%;
     font-family: canadian;
-    font-size: 200%;
+    padding: 2%;
+    text-align: center;
 }
     
+.allThePlaces{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+}
+
+.troisParTrois{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.imgEnsembles{
+    width: 60%;
+}
+
+.text2{
+    text-align: center;
+    font-family: canadian;
+    font-size: 200%;
+    padding: 2%;
+}
+
+.imgText{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;    
+    margin-bottom: 5%;    
+    font-family: canadian;
+    letter-spacing: 1px;
+}
+
+.imgText:hover{
+    color: red;
+    letter-spacing: 2px;
+}
+
+.placeParPlace{
+    background-color: white;
+}
+
 @keyframes flip {
     0% {
     transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
