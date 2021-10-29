@@ -1,0 +1,395 @@
+:root {
+    --color-txt-black: rgb(0, 0, 0);
+    --color-txt-white: rgb(255, 255, 255);
+    --color-txt-whitesmoke: rgb(245, 245, 245);
+    --color-bg-black: rgb(0,0,0);
+    --color-bg-white: rgb(255, 255, 255);
+    --color-bg-whitesmoke: rgba(245, 245, 245, 0.95);
+    --color-box-shadow: rgba(0, 0, 0, 0.87);
+    --color-text-shadow: rgba(255, 255, 255, 0.43);
+
+}
+
+@font-face { 	font-family: "Jap"; 	src: url('../images/Japanese_Brush/JAPAB___.ttf'); }
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#MyVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+/* CONTAIN ALL */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    z-index: 1;
+}
+/* CONTAIN ALL */
+/* PAGE 1 */
+.containTop {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+.Top {
+    display: flex;
+    height: 100%;
+}
+.Title {
+    display: flex;
+    align-items: center;
+    font-family: "Jap";
+    font-size: 50px;
+    padding-left: 50px;
+    width: 20%;
+}
+.Title a {
+    text-decoration: underline;
+    color: var(--color-txt-black);
+
+}
+/* FIN PAGE1 */
+/* PAGE2 */
+.containBottom {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    background-color: var(--color-bg-black);
+}
+
+#TitleBottom {
+    display: flex;
+    justify-content: center;
+    font-family: "Jap";
+    font-size: 50px;
+    width: 100%;
+    color: var(--color-txt-white);
+    padding-top: 15px;
+    text-decoration: underline;
+}
+.containCenterOfBottom {
+    display: flex;
+    height: 50%;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfBottom :nth-child(1){
+    width:5%;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfBottom :nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:45%;
+    background-color: var(--color-bg-whitesmoke);
+    font-family: Georgia;
+    letter-spacing: 2px;
+    line-height: 32px;
+    padding-left: 20px;
+    text-align: justify;
+
+}
+.containCenterOfBottom :nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:45%;
+    background-color: var(--color-bg-whitesmoke);
+
+}
+.containCenterOfBottom :nth-child(4){
+    width:5%;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfEnd {
+    display: flex;
+    height: 5%;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfEnd :nth-child(1){
+    width:5%;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfEnd :nth-child(2){
+    width:90%;
+    background-color: var(--color-bg-whitesmoke);
+    font-family: Georgia;
+    font-size: 35px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-align: center;
+    text-decoration: underline;
+    text-justify: inter-character;
+}
+.containCenterOfEnd :nth-child(3){
+    width:5%;
+    background-color: var(--color-bg-black);
+}
+#containTitleCenter {
+    display: flex;
+    justify-content: center;
+    font-family: "Jap";
+    font-size: 25px;
+    width: 100%;
+    height: 5%;
+    text-decoration: underline;
+    padding-top: 10px;
+    color: var(--color-txt-white);
+}
+.contentEnd {
+    display: flex;
+    justify-content: space-around;
+    height: 30%;
+}
+
+.PicturesImg {
+    width: 500px;
+    height: 400px;
+}
+#drake {
+    width: 25px;
+    height: 25px;
+}
+#IframTokyo {
+    width: 525px;
+    height: 325px;
+    box-shadow: 2px 2px 2px 2px var(--color-box-shadow);
+}
+/* FIN PAGE2 */
+
+/*hover IMG*/
+.ImgJap{
+    position:relative;
+    padding:0;
+    width: 325px;
+    height: 270px;
+    display:block;
+    cursor:pointer;
+    overflow:hidden;
+    text-shadow: 5px 5px 2px var(--color-box-shadow);
+
+}
+.Content {
+    font-family: Jap;
+    opacity:0;
+    font-size: 25px;
+    position:absolute;
+    backdrop-filter: blur(0.1em);
+    top:0;
+    left:0;
+    text-shadow: 5px 5px 2px var(--color-text-shadow);
+    width: 325px;
+    height: 270px;
+    transition: all 1s ease-out;
+    text-align:center;
+}
+
+.ImgJap .Content:hover {
+    opacity:1;
+}
+
+.ImgJap .Content .Text {
+    height:0;
+    opacity:1;
+    transition-delay: 0s;
+    transition-duration: 1.5s;
+}
+
+.ImgJap .Content:hover .Text {
+    opacity:1;
+    transform:translateY(100px);
+}
+
+.Link {
+    text-decoration: underline;
+    color: var(--color-txt-black);
+}
+/*hover IMG*/
+/* PAGE3 */
+.container2 {
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    z-index: 1;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfBottom2 {
+    display: flex;
+    height: 25%;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfBottom2 div:nth-child(1){
+    width:5%;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfBottom2 div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:45%;
+    background-color: var(--color-bg-whitesmoke);
+    font-family: Georgia;
+    letter-spacing: 2px;
+    line-height: 32px;
+    padding-left: 20px;
+    text-align: justify;
+}
+.containCenterOfBottom2 div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:45%;
+    background-color: var(--color-bg-whitesmoke)
+;
+
+}
+.containCenterOfBottom2 div:nth-child(4){
+    width:5%;
+    background-color: var(--color-bg-black);
+}
+
+.imgForContainP {
+    height: 200px;
+    width: 200px;
+}
+.EndTtitle {
+    display: flex;
+    justify-content: center;
+    font-family: "Jap";
+    font-size: 25px;
+    width: 100%;
+    color: var(--color-txt-white);
+    text-decoration: underline;
+    padding-top: 5%;
+}
+
+/* FIN PAGE3 */
+
+/*HEADER*/
+.containLOGO {
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+ul {
+    width: 932px;
+    height: 51px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .75);
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.lidc {
+    float: left;
+}
+
+.lidc .adc, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 70px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.lidc .adc:hover, .dropdown:hover .dropbtn {
+    background-color: #acafb4;
+    border-radius: 10px;
+}
+
+.lidc.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content .adc {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-content2{
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-content .adc:hover {
+    background-color: rgba(255, 255, 255, 0.83);
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.Remi:hover .dropdown-content2{
+    display: block;
+}
+
+.Francois:hover .dropdown-content2{
+    display: block;
+}
+
+.Hugo:hover .dropdown-content2{
+    display: block;
+}
+
+.REM{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color:rgb(224, 224, 224) ;
+}
+.FRAN{
+    font-size:  Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color:rgb(224, 224, 224) ;
+}
+.HUG{
+    font-size:  Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color:rgb(224, 224, 224) ;
+}
+/* FIN HEADER*/
