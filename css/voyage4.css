@@ -26,6 +26,7 @@ body{
 
 .titre{
     text-align: center;
+    margin-top: 5%;
 }
 
 .text{
@@ -266,4 +267,123 @@ body{
 .socialMedia{
     width: 25px;
     margin: 3px;
+}
+
+.containLOGO {
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+ul {
+    width: 932px;
+    height: 51px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .75);
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.lidc {
+    float: left;
+}
+
+.lidc .adc, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 70px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.lidc .adc:hover, .dropdown:hover .dropbtn {
+    background-color: #acafb4;
+    border-radius: 10px;
+}
+
+.lidc.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content .adc {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-content2{
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-content .adc:hover {
+    background-color: rgba(255, 255, 255, 0.83);
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.Remi:hover .dropdown-content2{
+    display: block;
+}
+
+.Francois:hover .dropdown-content2{
+    display: block;
+}
+
+.Hugo:hover .dropdown-content2{
+    display: block;
+}
+
+.REM{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color:rgb(224, 224, 224) ;
+}
+.FRAN{
+    font-size:  Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;    
+    background-color:rgb(224, 224, 224) ;
+}
+.HUG{
+    font-size:  Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color:rgb(224, 224, 224) ;
 }
