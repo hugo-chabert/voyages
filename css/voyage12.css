@@ -393,3 +393,38 @@ ul {
     background-color:rgb(224, 224, 224) ;
 }
 /* FIN HEADER*/
+
+/* FOOTER */
+
+.footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: var(--color-bg-black);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer1{
+    width: 33.333%;
+}
+
+.footer2{
+    width: 33.333%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.footer3{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.333%;
+}
+
+.socialMedia{
+    width: 25px;
+    margin: 3px;
+}

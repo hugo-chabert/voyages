@@ -74,3 +74,35 @@ label{
     width: 50%;
     margin-left: 25%;
 }
+
+.footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer1{
+    width: 33.333%;
+}
+
+.footer2{
+    width: 33.333%;
+    display: flex;
+    align-items: center;
+}
+
+.footer3{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.333%;
+}
+
+.socialMedia{
+    width: 25px;
+    margin: 3px;
+}
