@@ -93,8 +93,9 @@
     font-family: Georgia;
     letter-spacing: 2px;
     line-height: 32px;
-    padding-left: 20px;^
-    text-justify: auto;
+    padding-left: 20px;
+    text-align: justify;
+
 }
 .containCenterOfBottom :nth-child(3){
     display: flex;
@@ -239,7 +240,7 @@
     letter-spacing: 2px;
     line-height: 32px;
     padding-left: 20px;
-    text-justify: inter-character;
+    text-align: justify;
 }
 .containCenterOfBottom2 div:nth-child(3){
     display: flex;
