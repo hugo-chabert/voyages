@@ -1,9 +1,13 @@
 :root {
     --color-txt-black: rgb(0, 0, 0);
     --color-txt-white: rgb(255, 255, 255);
+    --color-txt-whitesmoke: rgb(245, 245, 245);
     --color-bg-black: rgb(0,0,0);
     --color-bg-white: rgb(255, 255, 255);
-    --color-bg-whitesmoke: rgb(245, 245, 245);
+    --color-bg-whitesmoke: rgba(245, 245, 245, 0.95);
+    --color-box-shadow: rgba(0, 0, 0, 0.87);
+    --color-text-shadow: rgba(255, 255, 255, 0.43);
+
 }
 
 @font-face { 	font-family: "Jap"; 	src: url('../images/Japanese_Brush/JAPAB___.ttf'); }
@@ -85,18 +89,19 @@
     justify-content: center;
     align-items: center;
     width:45%;
-    background-color: whitesmoke;
+    background-color: var(--color-bg-whitesmoke);
     font-family: Georgia;
     letter-spacing: 2px;
     line-height: 32px;
-    padding-left: 5px;
+    padding-left: 20px;^
+    text-justify: auto;
 }
 .containCenterOfBottom :nth-child(3){
     display: flex;
     justify-content: center;
     align-items: center;
     width:45%;
-    background-color: whitesmoke;
+    background-color: var(--color-bg-whitesmoke);
 
 }
 .containCenterOfBottom :nth-child(4){
@@ -121,61 +126,33 @@
     line-height: 32px;
     text-align: center;
     text-decoration: underline;
+    text-justify: inter-character;
 }
 .containCenterOfEnd :nth-child(3){
     width:5%;
     background-color: var(--color-bg-black);
 }
-
-.containCenterOfEnd {
+#containTitleCenter {
     display: flex;
+    justify-content: center;
+    font-family: "Jap";
+    font-size: 25px;
+    width: 100%;
     height: 5%;
-    background-color: var(--color-bg-black);
-}
-.containCenterOfEnd :nth-child(1){
-    width:5%;
-    background-color: var(--color-bg-black);
-}
-.containCenterOfEnd :nth-child(2){
-    width:90%;
-    background-color: var(--color-bg-whitesmoke);
-    font-family: Georgia;
-    font-size: 35px;
-    letter-spacing: 1px;
-    line-height: 32px;
-    text-align: center;
     text-decoration: underline;
+    padding-top: 10px;
+    color: var(--color-txt-white);
 }
-.containCenterOfEnd :nth-child(3){
-    width:5%;
-    background-color: var(--color-bg-black);
-}
-/**/
-.containCenterOfEnd2 {
+.contentEnd {
     display: flex;
-    height: 34%;
-    background-color: var(--color-bg-black);
+    justify-content: space-around;
+    height: 30%;
 }
-.containCenterOfEnd2 :nth-child(1){
-    width:5%;
-    background-color: var(--color-bg-black);
-}
-.containCenterOfEnd2 :nth-child(2){
-    width:90%;
-    background-color: var(--color-bg-whitesmoke);
-    font-family: Georgia;
-    font-size: 35px;
-    letter-spacing: 1px;
-    line-height: 32px;
-    text-align: center;
-    text-decoration: underline;
-}
-.containCenterOfEnd2 :nth-child(3){
-    width:5%;
-    background-color: var(--color-bg-black);
-}
-/**/
 
+.PicturesImg {
+    width: 500px;
+    height: 400px;
+}
 #drake {
     width: 25px;
     height: 25px;
@@ -183,5 +160,114 @@
 #IframTokyo {
     width: 525px;
     height: 325px;
+    box-shadow: 2px 2px 2px 2px var(--color-box-shadow);
 }
 /* FIN PAGE2 */
+
+/*hover IMG*/
+.ImgJap{
+    position:relative;
+    padding:0;
+    width: 325px;
+    height: 270px;
+    display:block;
+    cursor:pointer;
+    overflow:hidden;
+    text-shadow: 5px 5px 2px var(--color-box-shadow);
+
+}
+.Content {
+    font-family: Jap;
+    opacity:0;
+    font-size: 25px;
+    position:absolute;
+    backdrop-filter: blur(0.1em);
+    top:0;
+    left:0;
+    text-shadow: 5px 5px 2px var(--color-text-shadow);
+    width: 325px;
+    height: 270px;
+    transition: all 1s ease-out;
+    text-align:center;
+}
+
+.ImgJap .Content:hover {
+    opacity:1;
+}
+
+.ImgJap .Content .Text {
+    height:0;
+    opacity:1;
+    transition-delay: 0s;
+    transition-duration: 1.5s;
+}
+
+.ImgJap .Content:hover .Text {
+    opacity:1;
+    transform:translateY(100px);
+}
+
+.Link {
+    text-decoration: underline;
+    color: var(--color-txt-black);
+}
+/*hover IMG*/
+/* PAGE3 */
+.container2 {
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    z-index: 1;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfBottom2 {
+    display: flex;
+    height: 25%;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfBottom2 div:nth-child(1){
+    width:5%;
+    background-color: var(--color-bg-black);
+}
+.containCenterOfBottom2 div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:45%;
+    background-color: var(--color-bg-whitesmoke);
+    font-family: Georgia;
+    letter-spacing: 2px;
+    line-height: 32px;
+    padding-left: 20px;
+    text-justify: inter-character;
+}
+.containCenterOfBottom2 div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:45%;
+    background-color: var(--color-bg-whitesmoke)
+;
+
+}
+.containCenterOfBottom2 div:nth-child(4){
+    width:5%;
+    background-color: var(--color-bg-black);
+}
+
+.imgForContainP {
+    height: 200px;
+    width: 200px;
+}
+.EndTtitle {
+    display: flex;
+    justify-content: center;
+    font-family: "Jap";
+    font-size: 25px;
+    width: 100%;
+    color: var(--color-txt-white);
+    text-decoration: underline;
+    padding-top: 5%;
+}
+
+/* FIN PAGE3 */
